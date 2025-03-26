@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own Brand</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Build Your Own Brand</h1>
+        <p>Empowering Rural Entrepreneurs</p>
+        <nav>
+            <ul>
+                <li><a href="#tutorial">Tutorial</a></li>
+                <li><a href="#steps">Steps</a></li>
+                <li><a href="#funds">Funding Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tutorial">
+            <h2>Tutorial: Video Resources</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=example1" target="_blank">What is Branding?</a></li>
+                <li><a href="https://www.youtube.com/watch?v=example2" target="_blank">How to Create a Brand Identity</a></li>
+                <li><a href="https://www.youtube.com/watch?v=example3" target="_blank">Building Your Brand Story</a></li>
+                <li><a href="https://www.youtube.com/watch?v=example4" target="_blank">Social Media Branding Tips</a></li>
+                <li><a href="https://www.youtube.com/watch?v=example5" target="_blank">Branding for Small Businesses</a></li>
+            </ul>
+        </section>
+
+        <section id="steps">
+            <h2>Steps to Build Your Brand</h2>
+            <ol>
+                <li onclick="showStepInfo(1)">Identify Your Target Audience</li>
+                <li onclick="showStepInfo(2)">Define Your Brand Mission and Values</li>
+                <li onclick="showStepInfo(3)">Create a Unique Brand Identity</li>
+                <li onclick="showStepInfo(4)">Develop Your Brand Voice</li>
+                <li onclick="showStepInfo(5)">Build an Online Presence</li>
+                <li onclick="showStepInfo(6)">Engage with Your Community</li>
+                <li onclick="showStepInfo(7)">Gather Feedback and Iterate</li>
+            </ol>
+        </section>
+
+        <section id="funds">
+            <h2>Funding Resources</h2>
+            <ul id="ngo-list">
+                <li>NGO Name 1 - Contact No: 123-456-7890</li>
+                <li>NGO Name 2 - Contact No: 098-765-4321</li>
+                <li>NGO Name 3 - Contact No: 555-555-5555</li>
+            </ul>
+            <input type="text" id="ngo-name" placeholder="NGO Name">
+            <input type="text" id="ngo-contact" placeholder="Contact No">
+            <button onclick="addNgo()">Add NGO</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GRAMIN All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    
+</html>
